@@ -5,12 +5,13 @@
 npm install
 ```
 
-2. Require './socketBNS' as socket with calling its coin() function passing the name of the coin whose coin/inr is needed.
-
-3. Then socket.on('news', response => {}) will give depth of the coin in response whenever it changes
+#### Getting started
+```javascript
+const socket = require('./socketBNS').coin('BTC')
+```
 
 #### Socket call example
-
+```javascript
 socket.on('news, response => {
   try {
 		const data = JSON.parse(res)
@@ -19,6 +20,7 @@ socket.on('news, response => {
 		console.log('Error in new Stream ', e)
 	}
 });
+```
 
 <details>
  <summary>View Response</summary>
