@@ -13,7 +13,7 @@ const socket = require('./socketBNS').coin('BTC')
 
 #### Socket call example
 ```javascript
-socket.on('news, response => {
+socket.on('news, res => {
   try {
 		const data = JSON.parse(res)
 		console.log('Data Received ', data)
