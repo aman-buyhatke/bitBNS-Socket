@@ -1,7 +1,6 @@
 bitBNS-socket
 
-1. Install socket.io-client.
-  npm i socket.io-client
+1. Run:  npm install
 
 2. require './socketBNS' as socket with calling its coin() function passing the name of the coin whose coin/inr is needed.
 
