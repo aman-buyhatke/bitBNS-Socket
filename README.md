@@ -16,7 +16,8 @@ const socket = require('./socketBNS').coin('BTC')
 socket.on('news', res => {
 	try {
 		const data = JSON.parse(res)
-		console.log('Data Received', data)
+		console.log('Data Received')
+		console.log(data)
 	} catch (e) {
 		console.log('Error in the Stream', e)
 	}
@@ -27,15 +28,25 @@ socket.on('news', res => {
  <summary>View Response</summary>
 
 ```js
-Data Received  { type: 'buyList',
+Data Received
+{ type: 'buyList',
   data:
-   '[{"rate":625136.71,"btc":8331012},{"rate":625045,"btc":3709460},{"rate":625036,"btc":10116},{"rate":625001,"btc":1203337},{"rate":624000,"btc":10064156},{"rate":623890.99,"btc":138927},{"rate":623500,"btc":750000},{"rate":622001.71,"btc":801851},{"rate":622000,"btc":4418698},{"rate":621000,"btc":500000},{"rate":620050,"btc":169721},{"rate":620000,"btc":1370040},{"rate":617000,"btc":13447834},{"rate":616980.28,"btc":1200000},{"rate":616555,"btc":352603}]' }
-Data Received  { type: 'sellList',
+   '[{"rate":625062.64,"btc":8839377},{"rate":625051.71,"btc":957525},{"rate":625050.19,"btc":8282895},{"rate":625050,"btc":165971},{"rate":625045,"btc":3709460},{"rate":625036,"btc":10116},{"rate":625001,"btc":1203337},{"rate":624000,"btc":10064156},{"rate":623890.99,"btc":138927},{"rate":623500,"btc":750000},{"rate":622001.71,"btc":801851},{"rate":622000,"btc":4418698},{"rate":621000,"btc":500000},{"rate":620050,"btc":169721},{"rate":620000,"btc":1370040}]' }
+Data Received
+{ type: 'sellList',
   data:
-   '[{"rate":628850,"btc":4913444},{"rate":628903.36,"btc":9387074},{"rate":630000,"btc":2714337},{"rate":630000.38,"btc":1359328},{"rate":632199,"btc":1598798},{"rate":633000,"btc":6405710},{"rate":635000,"btc":7399509},{"rate":635200,"btc":3025031},{"rate":636999,"btc":107000},{"rate":637000,"btc":16840},{"rate":637057.7,"btc":12000000},{"rate":638000,"btc":6879407},{"rate":640000,"btc":13435462},{"rate":640100,"btc":800000},{"rate":641000,"btc":161977}]' }
-Data Received  { type: 'tradeList',
+   '[{"rate":628850,"btc":259600},{"rate":628903.36,"btc":9387074},{"rate":630000,"btc":2714337},{"rate":630000.38,"btc":1359328},{"rate":632199,"btc":1598798},{"rate":633000,"btc":6405710},{"rate":635000,"btc":7399509},{"rate":635200,"btc":3025031},{"rate":636999,"btc":107000},{"rate":637000,"btc":16840},{"rate":637057.7,"btc":12000000},{"rate":638000,"btc":6879407},{"rate":640000,"btc":13435462},{"rate":640100,"btc":800000},{"rate":641000,"btc":161977}]' }
+Data Received
+{ type: 'tradeList',
   data:
-   [ { btc: 10423783,
+   [ { btc: 1640002, rate: 628850, time: '2019-06-03T12:19:32.862Z' },
+     { btc: 1586229, rate: 628850, time: '2019-06-03T12:19:02.831Z' },
+     { btc: 3334303,
+       rate: 628842.46,
+       time: '2019-06-03T12:14:40.543Z' },
+     { btc: 1427613, rate: 628850, time: '2019-06-03T12:11:55.372Z' },
+     { btc: 48116, rate: 625061.62, time: '2019-06-03T12:10:27.271Z' },
+     { btc: 10423783,
        rate: 625136.71,
        time: '2019-06-03T12:08:13.120Z' },
      { btc: 645521,
@@ -52,21 +63,6 @@ Data Received  { type: 'tradeList',
      { btc: 2704032,
        rate: 626129.43,
        time: '2019-06-03T11:54:31.250Z' },
-     { btc: 645521, rate: 628000, time: '2019-06-03T11:54:31.232Z' },
-     { btc: 2428307,
-       rate: 628743.69,
-       time: '2019-06-03T11:53:27.170Z' },
-     { btc: 3224266,
-       rate: 628830.93,
-       time: '2019-06-03T11:52:54.138Z' },
-     { btc: 1063548,
-       rate: 628844.71,
-       time: '2019-06-03T11:49:35.957Z' },
-     { btc: 4567492,
-       rate: 628844.71,
-       time: '2019-06-03T11:49:35.930Z' },
-     { btc: 161638,
-       rate: 628844.71,
-       time: '2019-06-03T11:44:50.621Z' } ] }
+     { btc: 645521, rate: 628000, time: '2019-06-03T11:54:31.232Z' } ] }
 ```
 </details>
