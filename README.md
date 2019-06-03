@@ -18,7 +18,7 @@ socket.on('news, response => {
 		const data = JSON.parse(res)
 		console.log('Data Received ', data)
 	} catch (e) {
-		console.log('Error in new Stream ', e)
+		console.log('Error in the Stream ', e)
 	}
 });
 ```
