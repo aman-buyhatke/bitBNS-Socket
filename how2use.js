@@ -1,4 +1,4 @@
-const socket = require('./socketBNS').coin('INR', 'BTC')
+const socket = require('./socketBNS').coin('BTC', 'INR')
 
 socket.on('connect', () => console.log('Connected'))
 
