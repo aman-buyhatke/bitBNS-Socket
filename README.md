@@ -1,4 +1,4 @@
-# Bit BNS Socket
+# BitBNS Socket
 
 #### Installation
 ```
