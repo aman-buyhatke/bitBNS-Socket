@@ -8,6 +8,7 @@ npm install
 #### Getting started
 ```javascript
 const socket = require('./socketBNS').coin('BTC')
+// This will configure the socket to BTC-INR
 ```
 
 #### Socket call example
@@ -26,7 +27,6 @@ socket.on('news, response => {
  <summary>View Response</summary>
 
 ```js
-Connected
 Data Received  { type: 'buyList',
   data:
    '[{"rate":625136.71,"btc":8331012},{"rate":625045,"btc":3709460},{"rate":625036,"btc":10116},{"rate":625001,"btc":1203337},{"rate":624000,"btc":10064156},{"rate":623890.99,"btc":138927},{"rate":623500,"btc":750000},{"rate":622001.71,"btc":801851},{"rate":622000,"btc":4418698},{"rate":621000,"btc":500000},{"rate":620050,"btc":169721},{"rate":620000,"btc":1370040},{"rate":617000,"btc":13447834},{"rate":616980.28,"btc":1200000},{"rate":616555,"btc":352603}]' }
