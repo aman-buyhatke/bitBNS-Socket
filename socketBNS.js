@@ -1,7 +1,7 @@
 const socket_IO = require('socket.io-client');
 
 module.exports = {
-	coin(coinName) {
-		return socket_IO(`https://wsinrm.bitbns.com/?coin=${coinName.toUpperCase()}`);
+	coin(marketName, coinName) {
+		return socket_IO(`https://ws${marketName}m.bitbns.com/?coin=${coinName.toUpperCase()}`);
 	}
 };
