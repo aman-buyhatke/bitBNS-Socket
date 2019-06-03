@@ -9,7 +9,7 @@ npm install
 ```javascript
 const socket = require('./socketBNS').coin('INR', 'BTC')
 // This will configure the socket to BTC-INR
-// First arguement is marketName which can take value either 'INR', or 'BTC'
+// First arguement is marketName which can take either 'INR' or 'BTC' value
 // Second arguement is coinName
 ```
 
