@@ -7,7 +7,7 @@ npm install
 
 #### Getting started
 ```javascript
-const socket = require('./socketBNS').coin('BTC')
+const socket = require('./socketBNS').coin('INR', 'BTC')
 // This will configure the socket to BTC-INR
 ```
 
