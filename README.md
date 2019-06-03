@@ -13,14 +13,14 @@ const socket = require('./socketBNS').coin('BTC')
 
 #### Socket call example
 ```javascript
-socket.on('news, res => {
-  try {
+socket.on('news', res => {
+	try {
 		const data = JSON.parse(res)
-		console.log('Data Received ', data)
+		console.log('Data Received', data)
 	} catch (e) {
-		console.log('Error in the Stream ', e)
+		console.log('Error in the Stream', e)
 	}
-});
+})
 ```
 
 <details>
